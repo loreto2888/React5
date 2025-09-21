@@ -15,10 +15,10 @@ const Home = () => {
             <div className="col-12 col-md-6 col-lg-4" key={pizza.id}>
               <CardPizza 
                 id={pizza.id}
-                nombre={pizza.name}
-                precio={pizza.price}
-                ingredientes={pizza.ingredients}
-                imagen={pizza.img}
+                nombre={pizza.nombre}
+                precio={pizza.precio}
+                ingredientes={pizza.ingredientes}
+                imagen={pizza.imagen}
                 onAddToCart={() => addToCart(pizza)}
               />
             </div>
