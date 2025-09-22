@@ -4,7 +4,7 @@
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Cart from './components/Cart';
-import Home from './components/Home';
+import Pizza from './components/Pizza';
 import Login from './components/Login';
 import { CartProvider } from './context/CartContext';
 
