@@ -17,8 +17,8 @@ function App() {
       <div className="app">
         <Navbar setView={setView} />
         {view === 'login' && <Login setView={setView} />}
-        {view === 'home' && <Home />}
-        <Footer />
+        {view === 'home' && <Pizza />}
+                <Footer />
       </div>
     </CartProvider>
   );
