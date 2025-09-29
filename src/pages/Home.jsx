@@ -7,7 +7,7 @@ import { pizzas } from '../utils/pizzas';
 const Home = () => {
   const { addToCart } = useCart();
   
-  // Mostrar solo la primera pizza como en el Hito 4
+  // Mostrar solo la primera pizza como en el Hito 5
   const pizza = pizzas[0];
 
   return (
