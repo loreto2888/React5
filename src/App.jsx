@@ -14,7 +14,7 @@ import NotFound from './pages/NotFound';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/React5">
       <CartProvider>
         <div className="app">
           <Navbar />
