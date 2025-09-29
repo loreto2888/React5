@@ -1,7 +1,7 @@
 // src/pages/Pizza.jsx
 import Header from '../components/Header';
 import CardPizza from '../components/CardPizza';
-import { useCart } from '../context/CartContext';
+import { useCart } from '../hooks/useCart';
 import { useState, useEffect } from 'react';
 
 const Pizza = () => {

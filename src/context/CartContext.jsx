@@ -1,8 +1,6 @@
 import { createContext, useState } from "react";
 
-const CartContext = createContext();
-
-// useCart is now in a separate file
+export const CartContext = createContext();
 
 export function CartProvider({ children }) {
   const [cart, setCart] = useState([]);
