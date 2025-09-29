@@ -1,8 +1,10 @@
 import { formatCLP } from '../utils/format';
 import { useCart } from '../context/CartContext';
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 
-const Navbar = ({ user, setView, handleLogout }) => {
+
+const Navbar = () => {
   const { total, resetCart } = useCart();
   const [showModal, setShowModal] = useState(false);
 
@@ -12,9 +14,9 @@ const Navbar = ({ user, setView, handleLogout }) => {
         <div className="container-fluid">
           {/* Izquierda: solo logo */}
           <div className="d-flex align-items-center gap-2">
-            <a className="navbar-brand fw-bold" href="#" onClick={() => setView('home')}>
+            <Link className="navbar-brand fw-bold" to="/">
               🍕 Pizzería Mamma Mía!
-            </a>
+            </Link>
           </div>
 
           {/* Centro vacío para separación */}
@@ -22,21 +24,13 @@ const Navbar = ({ user, setView, handleLogout }) => {
 
           {/* Derecha: botones navegación y total */}
           <div className="d-flex align-items-center gap-2 ms-auto">
-            <button className="btn btn-outline-light btn-sm" onClick={() => setView('home')}>🍕 Home</button>
-            {user ? (
-              <>
-                <span className="text-light small me-2">� {user.username}</span>
-                <button className="btn btn-outline-light btn-sm" onClick={handleLogout}>🔒 Logout</button>
-              </>
-            ) : (
-              <>
-                <button className="btn btn-outline-light btn-sm" onClick={() => setView('login')}>🔐 Login</button>
-                <button className="btn btn-outline-light btn-sm" onClick={() => setView('register')}>🔐 Register</button>
-              </>
-            )}
-            <button className="btn btn-success ms-2" onClick={() => setShowModal(true)}>
+            <Link className="btn btn-outline-light btn-sm" to="/">🍕 Home</Link>
+            <Link className="btn btn-outline-light btn-sm" to="/login">� Login</Link>
+            <Link className="btn btn-outline-light btn-sm" to="/register">🔐 Register</Link>
+            <Link className="btn btn-outline-light btn-sm" to="/profile">� Profile</Link>
+            <Link className="btn btn-success ms-2" to="/cart">
               🛒 Total: ${formatCLP(total)}
-            </button>
+            </Link>
           </div>
         </div>
       </nav>
