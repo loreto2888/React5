@@ -1,5 +1,5 @@
 import { formatCLP } from '../utils/format';
-import { useCart } from '../hooks/useCart';
+import { useCart } from '../context/CartContext';
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 
