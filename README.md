@@ -1,10 +1,10 @@
 
 
-## Hito 4 - Pizzería Mamá Mía 🍕
+## 5 - Pizzería Mamá Mía 🍕
 
 ¡Bienvenido/a al proyecto **Pizzería Mamá Mía**!
 
-Este proyecto corresponde al Hito 4 del bootcamp Desafío Latam. Es una aplicación web desarrollada con React y Vite que simula el sitio de una pizzería, permitiendo:
+Este proyecto corresponde al Hito 5 del bootcamp Desafío Latam. Es una aplicación web desarrollada con React y Vite que simula el sitio de una pizzería, permitiendo:
 
 - Autenticación de usuario (login).
 - Listado de pizzas con imágenes, nombres, precios e ingredientes.
@@ -99,7 +99,7 @@ Este proyecto corresponde al Hito 4 del bootcamp Desafío Latam. Es una aplicaci
 ## Autor
 
 - Johanna Barrientos
-- Desafío Latam — Hito 4
+- Desafío Latam — Hito 5
 
 ---
 
