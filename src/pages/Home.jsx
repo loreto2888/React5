@@ -1,7 +1,7 @@
 // src/pages/Home.jsx
 import Header from '../components/Header';
 import CardPizza from '../components/CardPizza';
-import { useCart } from '../context/CartContext';
+import { useCart } from '../context/useCart';
 import { pizzas } from '../utils/pizzas';
 
 const Home = () => {
